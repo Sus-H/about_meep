@@ -1,47 +1,81 @@
-/* Reset some default styles */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
+body {
+    font-family: 'Roboto Mono', monospace; /* Use 'Roboto Mono' as primary font, fallback to generic monospace font */
     padding: 0;
+    margin: 0;
 }
 
-/* Basic styling */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
+/* Add your other CSS styles here */
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    padding:  20px 20px;
+    background-color: pink;
+    color: white;
+    justify-content: space-between;
+    align-items: center; /* vertical alignment, makes them align to center */
+    flex-wrap: wrap;
+    /* flex-direction: column; */
 }
 
-nav ul {
-    list-style-type: none;
+img {
+
+    display: flex;
+    /* max-width: 50%; */
+    /* margin: 20px; */
+    
+    
+    
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+.img-link-inner {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+    
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #333;
+.img-header {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-main {
-    padding: 20px;
+nav {
+    display: flex; /* makes the list align horisontally */
+    color: papayawhip; /* colors the bullets of list */
+    list-style: none; /* removes bullets */
+    font-weight: bold;
+    
 }
 
-section {
-    margin-bottom: 20px;
+nav a {
+    color:snow;
+    text-decoration: none; /* Underline from link */
+    display: block; /* why did we use this ?? */
+    transition: all 0.3s ease-out;
+
+}
+
+nav a:hover {
+    color:navajowhite;
+    transform: scale(120%);
+    
+  }
+
+nav li {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+    background-color: pink;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    text-align: center; /* not using align-items because we only have text here. Only works on text. */
+    font-size: .9rem;
 }
